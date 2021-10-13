@@ -1,7 +1,3 @@
-
-
-from typing import Protocol
-
 from pathlib import Path
 import json
 
