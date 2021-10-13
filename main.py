@@ -32,17 +32,21 @@ while status:
         if type_of_transaction in range(1,3):
             status = False
 
-
+match type_of_transaction:
+    case 1:
+        T = 0
+        C = 0
+        M = 0
+    case _:
+        T = 0
+        C = 0
+        M = 0
+        
 
 a = protocol_parameters['txFeePerByte']
 b = protocol_parameters['executionUnitPrices']['priceSteps']
 c = protocol_parameters['executionUnitPrices']['priceMemory']
 d = protocol_parameters['txFeeFixed']
-T = 0
-C = 0
-M = 0
-
-
 
 
 #needed: T * C * M 
